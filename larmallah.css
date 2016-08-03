@@ -1,0 +1,159 @@
+a {
+  font-weight: 600;
+  color: #2196f3;
+}
+a:hover {
+  color: #e66;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.title {
+  color: #999;
+  text-align: center;
+}
+.title h1 {
+  font-size: 1.5em;
+  margin: 175px 0 10px 0;
+}
+.title a {
+  vertical-align: middle;
+}
+.title a:hover img {
+  -webkit-animation: link 0.5s;
+          animation: link 0.5s;
+}
+.title a img {
+  width: 18px;
+}
+
+.credits {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.love {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/heart-smil.svg);
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: 165px;
+  margin: 40px auto 50px auto;
+  position: relative;
+  width: 600px;
+}
+
+.artboard {
+  height: 100%;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+@-webkit-keyframes link {
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes link {
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+.translate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+}
+.field-btn {
+  width: 10%;
+}
+.field-lable {
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.field-lable-right {
+  text-align: right;
+}
+.field-text {
+  border: none;
+  box-shadow: 0 3px #2196f3;
+  font-size: 0.8em;
+  height: 40px;
+  margin: 10px 0;
+  outline: none;
+  padding: 0 10px;
+}
+
+.btn-direction {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 33px 0;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.btn-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.textarea {
+  overflow-y: scroll;
+}
+
+.container {
+  height: 90%;
+}
