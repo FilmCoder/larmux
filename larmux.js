@@ -1,10 +1,15 @@
 /* Larmallah */
 
+// makes cursor start in the input swag
+window.onload = function() {
+  document.getElementById("input-swag").focus();
+};
+
 var input_swag  = document.getElementById("input-swag");
 var output_swag = document.getElementById("output-swag");
 
 function setOutputSwag(text) {
-  output_swag.value = larmuxify(text)
+  output_swag.textContent = larmuxify(text)
 }
 
 function larmuxify(input_text) {
