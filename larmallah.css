@@ -4,6 +4,10 @@
   --text-fields-color: grey;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 /*
 body {
   background-color: rgba(255, 88, 88, 0.65);
@@ -39,11 +43,11 @@ body {
 }
 
 #input-title {
-    left: 18%;
+    left: 20%;
 }
 
 #output-title {
-    right: 18%;
+    right: 20%;
 }
 
 .swag-field {
