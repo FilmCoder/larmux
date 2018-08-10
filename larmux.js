@@ -14,7 +14,6 @@ function setOutputSwag(text) {
 
 function larmuxify(input_text) {
 
-    // TODO: switch to do while loop, don't do while true with break and continue
     do {
       var words = input_text.split(" ");
       var output_text = [];
