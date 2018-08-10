@@ -15,7 +15,7 @@ function setOutputSwag(text) {
 function larmuxify(input_text) {
 
     // TODO: switch to do while loop, don't do while true with break and continue
-    while(true) {
+    do {
       var words = input_text.split(" ");
       var output_text = [];
       const larmallah = 'larmallah ';
@@ -67,18 +67,7 @@ function larmuxify(input_text) {
 
       // if the output hasn't been changed at all, run algorithm again
       // until it's changed
-
-
-      if(output == input_text) {
-          // console.log("-----------");
-          // console.log("REDOING ALGORITHM");
-          // console.log("output: " + output);
-          // console.log("input_text: " + input_text);
-          continue;
-      } else {
-        break;
-      }
-    }
+    } while (output == input_text);
 
     return output;
 }
